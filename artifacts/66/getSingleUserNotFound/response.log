@@ -1,0 +1,93 @@
+HTTP/1.1 401 Unauthorized
+Date: Thu, 02 Oct 2025 15:30:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"1b-FQ1mIOMgD7jlZN53VsiSdXzsYTY"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 84
+Ratelimit-Reset: 132
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=2DW5IB40bJCMRt8F9rnw%2Fr0pYZAVlcV%2Fk%2BDttIHtA%2F4%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759419003"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=2DW5IB40bJCMRt8F9rnw%2Fr0pYZAVlcV%2Fk%2BDttIHtA%2F4%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759419003"
+Server: cloudflare
+Vary: Origin, accept-encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: a80b6ae7-1836-8a7a-2cd2-90dad14451b5
+X-Xss-Protection: 1; mode=block
+cf-cache-status: BYPASS
+CF-RAY: 98853d256bea9141-MAA
+
+{
+    "error": "Missing API key"
+}
+HTTP/1.1 401 Unauthorized
+Date: Thu, 02 Oct 2025 15:30:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"1b-FQ1mIOMgD7jlZN53VsiSdXzsYTY"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 81
+Ratelimit-Reset: 132
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=GnBT28bJ1bT7S%2B3%2Ftq0Rbr5aEXN9QnBjRJIVYp5idrk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759419004"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=GnBT28bJ1bT7S%2B3%2Ftq0Rbr5aEXN9QnBjRJIVYp5idrk%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759419004"
+Server: cloudflare
+Vary: Origin, accept-encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: d0eefd46-3740-0f0f-90d0-daaeeeea69a6
+X-Xss-Protection: 1; mode=block
+cf-cache-status: BYPASS
+CF-RAY: 98853d25dcb617a7-MAA
+
+{
+    "error": "Missing API key"
+}
+HTTP/1.1 401 Unauthorized
+Date: Thu, 02 Oct 2025 15:30:04 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"1b-FQ1mIOMgD7jlZN53VsiSdXzsYTY"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 83
+Ratelimit-Reset: 132
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=GnBT28bJ1bT7S%2B3%2Ftq0Rbr5aEXN9QnBjRJIVYp5idrk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759419004"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=GnBT28bJ1bT7S%2B3%2Ftq0Rbr5aEXN9QnBjRJIVYp5idrk%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759419004"
+Server: cloudflare
+Vary: Origin, accept-encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 282f9bbd-8d9b-b3b9-6bfe-4bf3add53f3f
+X-Xss-Protection: 1; mode=block
+cf-cache-status: BYPASS
+CF-RAY: 98853d25abf86115-MAA
+
+{
+    "error": "Missing API key"
+}
