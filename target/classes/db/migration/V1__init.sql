@@ -3,13 +3,13 @@
 CREATE DATABASE IF NOT EXISTS testpilot CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE testpilot;
 
--- Example tables: test_suites, test_cases, test_executions, test_results, artifacts
-CREATE TABLE IF NOT EXISTS test_suites (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  description TEXT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+-- Example tables: test_suite, test_cases, test_executions, test_result, artifacts
+CREATE TABLE IF NOT EXISTS test_suite (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    suite_xml_file VARCHAR(1024),
+    description VARCHAR(2000),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS test_cases (
@@ -25,33 +25,32 @@ CREATE TABLE IF NOT EXISTS test_cases (
   FOREIGN KEY (test_suite_id) REFERENCES test_suites(id) ON DELETE SET NULL
 );
 
-CREATE TABLE IF NOT EXISTS test_executions (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  test_suite_id BIGINT,
-  start_time DATETIME,
-  end_time DATETIME,
-  status VARCHAR(50),
-  total_tests INT,
-  passed INT,
-  failed INT,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (test_suite_id) REFERENCES test_suites(id) ON DELETE SET NULL
+CREATE TABLE IF NOT EXISTS test_execution (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    test_suite_id BIGINT,
+    status VARCHAR(50),
+    started_at TIMESTAMP NULL,
+    ended_at TIMESTAMP NULL,
+    total_tests INT DEFAULT 0,
+    passed_tests INT DEFAULT 0,
+    failed_tests INT DEFAULT 0,
+    skipped_tests INT DEFAULT 0,
+    CONSTRAINT fk_execution_suite FOREIGN KEY (test_suite_id) REFERENCES test_suite(id)
 );
 
-CREATE TABLE IF NOT EXISTS test_results (
-  id BIGINT AUTO_INCREMENT PRIMARY KEY,
-  execution_id BIGINT,
-  test_case_id BIGINT,
-  test_case_name VARCHAR(255),
-  status VARCHAR(50),
-  start_time DATETIME,
-  end_time DATETIME,
-  duration_ms BIGINT,
-  error_message TEXT,
-  artifact_path VARCHAR(1024),
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (execution_id) REFERENCES test_executions(id) ON DELETE CASCADE,
-  FOREIGN KEY (test_case_id) REFERENCES test_cases(id) ON DELETE SET NULL
+
+CREATE TABLE IF NOT EXISTS test_result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    execution_id BIGINT,
+    test_case_id VARCHAR(255),
+    test_case_name VARCHAR(1024),
+    status VARCHAR(50),
+    start_time TIMESTAMP NULL,
+    end_time TIMESTAMP NULL,
+    duration_ms BIGINT,
+    error_message TEXT,
+    artifact_path VARCHAR(1024),
+    CONSTRAINT fk_result_execution FOREIGN KEY (execution_id) REFERENCES test_execution(id)
 );
 
 CREATE TABLE IF NOT EXISTS artifacts(

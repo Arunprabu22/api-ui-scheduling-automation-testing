@@ -3,14 +3,44 @@
 <suite thread-count="2" parallel="tests" name="Failed suite [Full Regression Suite]" guice-stage="DEVELOPMENT">
   <parameter name="pageLoadTimeout" value="60"/>
   <parameter name="elementWaitTimeout" value="20"/>
+  <test thread-count="2" parallel="tests" name="BlazeDemo UI Tests(failed)">
+    <classes>
+      <class name="com.testframework.ui_tests.PurchaseFlowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyCardYear"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.testframework.ui_tests.PurchaseFlowTest -->
+      <class name="com.testframework.ui_tests.FlightResultTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyResultsTableHeaders"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="chooseSpecificFlight"/>
+          <include name="failingTestForScreenshot"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.testframework.ui_tests.FlightResultTest -->
+    </classes>
+  </test> <!-- BlazeDemo UI Tests(failed) -->
   <test thread-count="2" parallel="tests" name="ReqRes API Tests(failed)">
     <classes>
       <class name="com.testframework.api_tests.UserApiTests">
         <methods>
           <include name="deleteUser"/>
           <include name="captureLogs"/>
-          <include name="createUser"/>
           <include name="getSingleUserNotFound"/>
+          <include name="createUser"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
           <include name="springTestContextPrepareTestInstance"/>
@@ -26,44 +56,14 @@
           <include name="loginSuccessful"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
-          <include name="loginUnsuccessful"/>
-          <include name="springTestContextAfterTestClass"/>
           <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestMethod"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="loginUnsuccessful"/>
           <include name="singleResourceNotFound"/>
+          <include name="springTestContextAfterTestMethod"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.testframework.api_tests.LoginApiTests -->
     </classes>
   </test> <!-- ReqRes API Tests(failed) -->
-  <test thread-count="2" parallel="tests" name="BlazeDemo UI Tests(failed)">
-    <classes>
-      <class name="com.testframework.ui_tests.PurchaseFlowTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyCardYear"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="setUp"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- com.testframework.ui_tests.PurchaseFlowTest -->
-      <class name="com.testframework.ui_tests.FlightResultTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyResultsTableHeaders"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="setUp"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="chooseSpecificFlight"/>
-          <include name="failingTestForScreenshot"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestMethod"/>
-        </methods>
-      </class> <!-- com.testframework.ui_tests.FlightResultTest -->
-    </classes>
-  </test> <!-- BlazeDemo UI Tests(failed) -->
 </suite> <!-- Failed suite [Full Regression Suite] -->

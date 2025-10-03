@@ -1,0 +1,77 @@
+HTTP/1.1 401 Unauthorized
+Date: Fri, 03 Oct 2025 15:00:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"1b-FQ1mIOMgD7jlZN53VsiSdXzsYTY"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 97
+Ratelimit-Reset: 299
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Z90XSNfYQs4MdhE6GUCdWmDdPcj%2FvlqbIBgglcVZXVk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759503606"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Z90XSNfYQs4MdhE6GUCdWmDdPcj%2FvlqbIBgglcVZXVk%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759503606"
+Server: cloudflare
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: b9d4e27d-c2cd-eb9c-da58-da1910f28283
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+CF-RAY: 988d4ea4ea25ef77-MAA
+
+{
+    "error": "Missing API key"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "peter@klaven"
+}
+HTTP/1.1 401 Unauthorized
+Date: Fri, 03 Oct 2025 15:00:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"1b-FQ1mIOMgD7jlZN53VsiSdXzsYTY"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 96
+Ratelimit-Reset: 299
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Z90XSNfYQs4MdhE6GUCdWmDdPcj%2FvlqbIBgglcVZXVk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759503606"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Z90XSNfYQs4MdhE6GUCdWmDdPcj%2FvlqbIBgglcVZXVk%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759503606"
+Server: cloudflare
+Vary: Origin, accept-encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 47c257be-4158-1891-f801-ca74aa0e0e47
+X-Xss-Protection: 1; mode=block
+cf-cache-status: BYPASS
+CF-RAY: 988d4ea4da561882-MAA
+
+{
+    "error": "Missing API key"
+}
