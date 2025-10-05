@@ -9,8 +9,8 @@
         <methods>
           <include name="deleteUser"/>
           <include name="captureLogs"/>
-          <include name="getSingleUserNotFound"/>
           <include name="createUser"/>
+          <include name="getSingleUserNotFound"/>
           <include name="getSingleUser"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
@@ -19,19 +19,21 @@
           <include name="springTestContextAfterTestMethod"/>
           <include name="setup"/>
           <include name="updateUserPut"/>
+          <include name="listUsers"/>
         </methods>
       </class> <!-- com.testframework.api_tests.UserApiTests -->
       <class name="com.testframework.api_tests.LoginApiTests">
         <methods>
+          <include name="listResources"/>
           <include name="captureLogs"/>
           <include name="loginSuccessful"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
           <include name="springTestContextPrepareTestInstance"/>
-          <include name="loginUnsuccessful"/>
           <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestMethod"/>
+          <include name="loginUnsuccessful"/>
           <include name="singleResourceNotFound"/>
+          <include name="springTestContextAfterTestMethod"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.testframework.api_tests.LoginApiTests -->
