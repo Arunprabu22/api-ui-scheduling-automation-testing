@@ -24,10 +24,10 @@
           <include name="springTestContextBeforeTestClass"/>
           <include name="setUp"/>
           <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="chooseSpecificFlight"/>
           <include name="failingTestForScreenshot"/>
+          <include name="chooseSpecificFlight"/>
           <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestMethod"/>
         </methods>
       </class> <!-- com.testframework.ui_tests.FlightResultTest -->
@@ -39,12 +39,12 @@
         <methods>
           <include name="deleteUser"/>
           <include name="captureLogs"/>
-          <include name="getSingleUserNotFound"/>
           <include name="createUser"/>
+          <include name="getSingleUserNotFound"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestMethod"/>
           <include name="setup"/>
           <include name="updateUserPut"/>
@@ -56,11 +56,11 @@
           <include name="loginSuccessful"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
           <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
           <include name="loginUnsuccessful"/>
-          <include name="singleResourceNotFound"/>
           <include name="springTestContextAfterTestMethod"/>
+          <include name="singleResourceNotFound"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.testframework.api_tests.LoginApiTests -->

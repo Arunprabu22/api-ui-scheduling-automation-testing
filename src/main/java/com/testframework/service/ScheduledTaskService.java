@@ -36,7 +36,7 @@ public class ScheduledTaskService {
     }
 
     /**
-     * --- THIS IS THE NEW METHOD ---
+
      * Schedules the Full Regression suite (ID 3) to run automatically.
      * The cron expression "0 0 3 * * ?" means it will run every day at 3:00 AM.
      */

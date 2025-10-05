@@ -5,35 +5,36 @@
   <parameter name="elementWaitTimeout" value="20"/>
   <test thread-count="2" parallel="classes" name="ReqRes Full API Tests(failed)">
     <classes>
+      <class name="com.testframework.api_tests.UserApiTests">
+        <methods>
+          <include name="deleteUser"/>
+          <include name="captureLogs"/>
+          <include name="getSingleUserNotFound"/>
+          <include name="createUser"/>
+          <include name="getSingleUser"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="setup"/>
+          <include name="updateUserPut"/>
+        </methods>
+      </class> <!-- com.testframework.api_tests.UserApiTests -->
       <class name="com.testframework.api_tests.LoginApiTests">
         <methods>
           <include name="captureLogs"/>
           <include name="loginSuccessful"/>
           <include name="springTestContextBeforeTestClass"/>
           <include name="springTestContextBeforeTestMethod"/>
-          <include name="loginUnsuccessful"/>
           <include name="springTestContextPrepareTestInstance"/>
+          <include name="loginUnsuccessful"/>
           <include name="springTestContextAfterTestClass"/>
-          <include name="singleResourceNotFound"/>
           <include name="springTestContextAfterTestMethod"/>
+          <include name="singleResourceNotFound"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.testframework.api_tests.LoginApiTests -->
-      <class name="com.testframework.api_tests.UserApiTests">
-        <methods>
-          <include name="deleteUser"/>
-          <include name="captureLogs"/>
-          <include name="createUser"/>
-          <include name="getSingleUserNotFound"/>
-          <include name="springTestContextBeforeTestClass"/>
-          <include name="springTestContextBeforeTestMethod"/>
-          <include name="springTestContextPrepareTestInstance"/>
-          <include name="springTestContextAfterTestClass"/>
-          <include name="springTestContextAfterTestMethod"/>
-          <include name="setup"/>
-          <include name="updateUserPut"/>
-        </methods>
-      </class> <!-- com.testframework.api_tests.UserApiTests -->
     </classes>
   </test> <!-- ReqRes Full API Tests(failed) -->
 </suite> <!-- Failed suite [ReqRes API Suite] -->

@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="3" failed="7" skipped="0">
+<testng-results ignored="0" total="10" passed="2" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-03T20:30:00 IST" name="ReqRes API Suite" finished-at="2025-10-03T20:30:05 IST" duration-ms="5056">
+  <suite started-at="2025-10-05T19:15:00 IST" name="ReqRes API Suite" finished-at="2025-10-05T19:21:22 IST" duration-ms="382819">
     <groups>
     </groups>
-    <test started-at="2025-10-03T20:30:00 IST" name="ReqRes Full API Tests" finished-at="2025-10-03T20:30:05 IST" duration-ms="5056">
+    <test started-at="2025-10-05T19:15:00 IST" name="ReqRes Full API Tests" finished-at="2025-10-05T19:21:22 IST" duration-ms="382819">
       <class name="com.testframework.api_tests.UserApiTests">
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:00 IST" name="springTestContextBeforeTestClass" finished-at="2025-10-03T20:30:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:00 IST" name="springTestContextPrepareTestInstance" finished-at="2025-10-03T20:30:00 IST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:00 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:15:00 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:15:00 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:00 IST" name="setup" finished-at="2025-10-03T20:30:00 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:15:00 IST" name="springTestContextBeforeTestClass" finished-at="2025-10-05T19:15:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:15:00 IST" name="springTestContextPrepareTestInstance" finished-at="2025-10-05T19:15:00 IST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:15:00 IST" name="setup" finished-at="2025-10-05T19:15:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:00 IST" name="createUser" finished-at="2025-10-03T20:30:02 IST" duration-ms="2217" status="FAIL">
+        <test-method signature="createUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:15:00 IST" name="createUser" finished-at="2025-10-05T19:16:03 IST" duration-ms="63795" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -46,11 +46,9 @@ at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.jav
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -60,7 +58,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.UserApiTests.createUser(UserApiTests.java:50)
@@ -86,44 +84,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:02 IST" name="captureLogs" finished-at="2025-10-03T20:30:02 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:16:04 IST" name="captureLogs" finished-at="2025-10-05T19:16:04 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createUser status=FAILURE method=UserApiTests.createUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0] output={null}]]]>
+                <![CDATA[[TestResult name=createUser status=FAILURE method=UserApiTests.createUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:02 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:02 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.testframework.api_tests.UserApiTests.createUser()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:02 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:02 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.testframework.api_tests.UserApiTests.deleteUser()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:02 IST" name="setup" finished-at="2025-10-03T20:30:02 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deleteUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:02 IST" name="deleteUser" finished-at="2025-10-03T20:30:03 IST" duration-ms="362" status="FAIL">
+        <test-method signature="deleteUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:16:04 IST" name="deleteUser" finished-at="2025-10-05T19:17:09 IST" duration-ms="65239" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -141,7 +113,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.jav
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -151,7 +123,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.UserApiTests.deleteUser(UserApiTests.java:73)
@@ -177,18 +149,44 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUser -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="captureLogs" finished-at="2025-10-03T20:30:03 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:16:04 IST" name="setup" finished-at="2025-10-05T19:16:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:16:04 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:16:04 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteUser status=FAILURE method=UserApiTests.deleteUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0] output={null}]]]>
+                <![CDATA[public void com.testframework.api_tests.UserApiTests.createUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:16:04 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:16:04 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.testframework.api_tests.UserApiTests.deleteUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:17:09 IST" name="captureLogs" finished-at="2025-10-05T19:17:09 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteUser status=FAILURE method=UserApiTests.deleteUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:17:09 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:17:09 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,7 +197,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:17:09 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:17:09 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,52 +208,65 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="getSingleUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="getSingleUser" finished-at="2025-10-03T20:30:03 IST" duration-ms="396" status="PASS">
+        <test-method signature="getSingleUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:17:09 IST" name="getSingleUser" finished-at="2025-10-05T19:18:12 IST" duration-ms="63404" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <200> but was <401>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <401>.
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at com.testframework.api_tests.UserApiTests.getSingleUser(UserApiTests.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:258)
+at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:154)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:272)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:656)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleUser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="setup" finished-at="2025-10-03T20:30:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:17:09 IST" name="setup" finished-at="2025-10-05T19:17:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.testframework.api_tests.UserApiTests.getSingleUser()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="captureLogs" finished-at="2025-10-03T20:30:03 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getSingleUser status=SUCCESS method=UserApiTests.getSingleUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.testframework.api_tests.UserApiTests.getSingleUserNotFound()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="setup" finished-at="2025-10-03T20:30:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getSingleUserNotFound()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:03 IST" name="getSingleUserNotFound" finished-at="2025-10-03T20:30:04 IST" duration-ms="498" status="FAIL">
+        <test-method signature="getSingleUserNotFound()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:18:12 IST" name="getSingleUserNotFound" finished-at="2025-10-05T19:19:16 IST" duration-ms="63440" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -273,7 +284,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.jav
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -283,7 +294,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.UserApiTests.getSingleUserNotFound(UserApiTests.java:38)
@@ -309,18 +320,59 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleUserNotFound -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="captureLogs" finished-at="2025-10-03T20:30:04 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:18:12 IST" name="captureLogs" finished-at="2025-10-05T19:18:12 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getSingleUserNotFound status=FAILURE method=UserApiTests.getSingleUserNotFound()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0] output={null}]]]>
+                <![CDATA[[TestResult name=getSingleUser status=FAILURE method=UserApiTests.getSingleUser()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:04 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:18:12 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:18:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.testframework.api_tests.UserApiTests.getSingleUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:18:12 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:18:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.testframework.api_tests.UserApiTests.getSingleUserNotFound()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:18:12 IST" name="setup" finished-at="2025-10-05T19:18:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:19:16 IST" name="captureLogs" finished-at="2025-10-05T19:19:16 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getSingleUserNotFound status=FAILURE method=UserApiTests.getSingleUserNotFound()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureLogs -->
+        <test-method signature="listUsers()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:19:16 IST" name="listUsers" finished-at="2025-10-05T19:20:19 IST" duration-ms="63374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listUsers -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:19:16 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:19:16 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -331,7 +383,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:04 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:19:16 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:19:16 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -342,26 +394,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="listUsers()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="listUsers" finished-at="2025-10-03T20:30:04 IST" duration-ms="574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- listUsers -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="setup" finished-at="2025-10-03T20:30:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:19:16 IST" name="setup" finished-at="2025-10-05T19:19:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="captureLogs" finished-at="2025-10-03T20:30:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=listUsers status=SUCCESS method=UserApiTests.listUsers()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:20:19 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:20:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -372,22 +409,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:20:19 IST" name="captureLogs" finished-at="2025-10-05T19:20:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.testframework.api_tests.UserApiTests.updateUserPut()]]>
+                <![CDATA[[TestResult name=listUsers status=SUCCESS method=UserApiTests.listUsers()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="setup" finished-at="2025-10-03T20:30:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="updateUserPut()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:04 IST" name="updateUserPut" finished-at="2025-10-03T20:30:05 IST" duration-ms="473" status="FAIL">
+        </test-method> <!-- captureLogs -->
+        <test-method signature="updateUserPut()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:20:19 IST" name="updateUserPut" finished-at="2025-10-05T19:21:22 IST" duration-ms="63403" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -405,7 +438,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.jav
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -415,7 +448,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.UserApiTests.updateUserPut(UserApiTests.java:63)
@@ -441,18 +474,26 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserPut -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:05 IST" name="captureLogs" finished-at="2025-10-03T20:30:05 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:20:19 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:20:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateUserPut status=FAILURE method=UserApiTests.updateUserPut()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0] output={null}]]]>
+                <![CDATA[public void com.testframework.api_tests.UserApiTests.updateUserPut()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:05 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:05 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:20:19 IST" name="setup" finished-at="2025-10-05T19:20:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:21:22 IST" name="springTestContextAfterTestClass" finished-at="2025-10-05T19:21:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:21:22 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:21:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -463,21 +504,28 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.testframework.api_tests.UserApiTests@1fbf85f0]" started-at="2025-10-03T20:30:05 IST" name="springTestContextAfterTestClass" finished-at="2025-10-03T20:30:05 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced]" started-at="2025-10-05T19:21:22 IST" name="captureLogs" finished-at="2025-10-05T19:21:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateUserPut status=FAILURE method=UserApiTests.updateUserPut()[pri:0, instance:com.testframework.api_tests.UserApiTests@154b9ced] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextAfterTestClass -->
+        </test-method> <!-- captureLogs -->
       </class> <!-- com.testframework.api_tests.UserApiTests -->
       <class name="com.testframework.api_tests.LoginApiTests">
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:00 IST" name="springTestContextPrepareTestInstance" finished-at="2025-10-03T20:30:00 IST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:00 IST" name="springTestContextBeforeTestClass" finished-at="2025-10-03T20:30:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:15:00 IST" name="springTestContextBeforeTestClass" finished-at="2025-10-05T19:15:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:00 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:15:00 IST" name="springTestContextPrepareTestInstance" finished-at="2025-10-05T19:15:00 IST" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:15:00 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:15:00 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -488,26 +536,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:00 IST" name="setup" finished-at="2025-10-03T20:30:00 IST" duration-ms="359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="listResources()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:00 IST" name="listResources" finished-at="2025-10-03T20:30:03 IST" duration-ms="3033" status="PASS">
+        <test-method signature="listResources()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:15:00 IST" name="listResources" finished-at="2025-10-05T19:16:03 IST" duration-ms="63570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listResources -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="captureLogs" finished-at="2025-10-03T20:30:03 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=listResources status=SUCCESS method=LoginApiTests.listResources()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:15:00 IST" name="setup" finished-at="2025-10-05T19:15:00 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:16:03 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:16:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -518,18 +555,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:16:03 IST" name="captureLogs" finished-at="2025-10-05T19:16:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.testframework.api_tests.LoginApiTests.loginSuccessful()]]>
+                <![CDATA[[TestResult name=listResources status=SUCCESS method=LoginApiTests.listResources()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="loginSuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="loginSuccessful" finished-at="2025-10-03T20:30:03 IST" duration-ms="363" status="FAIL">
+        </test-method> <!-- captureLogs -->
+        <test-method signature="loginSuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:16:03 IST" name="loginSuccessful" finished-at="2025-10-05T19:17:07 IST" duration-ms="63754" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -547,7 +584,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.jav
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -557,7 +594,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.LoginApiTests.loginSuccessful(LoginApiTests.java:19)
@@ -583,22 +620,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessful -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="setup" finished-at="2025-10-03T20:30:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:16:03 IST" name="setup" finished-at="2025-10-05T19:16:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="captureLogs" finished-at="2025-10-03T20:30:03 IST" duration-ms="7" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginSuccessful status=FAILURE method=LoginApiTests.loginSuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:16:03 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:16:03 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -608,23 +634,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:03 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:17:07 IST" name="captureLogs" finished-at="2025-10-05T19:17:07 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.testframework.api_tests.LoginApiTests.loginUnsuccessful()]]>
+                <![CDATA[[TestResult name=loginSuccessful status=FAILURE method=LoginApiTests.loginSuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="setup" finished-at="2025-10-03T20:30:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginUnsuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:03 IST" name="loginUnsuccessful" finished-at="2025-10-03T20:30:04 IST" duration-ms="517" status="FAIL">
+        </test-method> <!-- captureLogs -->
+        <test-method signature="loginUnsuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:17:07 IST" name="loginUnsuccessful" finished-at="2025-10-05T19:18:11 IST" duration-ms="63649" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -642,7 +664,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.jav
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -652,7 +674,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.LoginApiTests.loginUnsuccessful(LoginApiTests.java:32)
@@ -678,18 +700,44 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUnsuccessful -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:04 IST" name="captureLogs" finished-at="2025-10-03T20:30:04 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:17:07 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:17:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginUnsuccessful status=FAILURE method=LoginApiTests.loginUnsuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35] output={null}]]]>
+                <![CDATA[public void com.testframework.api_tests.LoginApiTests.loginSuccessful()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:17:07 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:17:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.testframework.api_tests.LoginApiTests.loginUnsuccessful()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:17:07 IST" name="setup" finished-at="2025-10-05T19:17:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:18:11 IST" name="captureLogs" finished-at="2025-10-05T19:18:11 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginUnsuccessful status=FAILURE method=LoginApiTests.loginUnsuccessful()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:04 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:04 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:18:11 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:18:11 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -700,7 +748,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:04 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-03T20:30:04 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:18:11 IST" name="springTestContextBeforeTestMethod" finished-at="2025-10-05T19:18:11 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -711,11 +759,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:04 IST" name="setup" finished-at="2025-10-03T20:30:04 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="singleResourceNotFound()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:04 IST" name="singleResourceNotFound" finished-at="2025-10-03T20:30:05 IST" duration-ms="485" status="FAIL">
+        <test-method signature="singleResourceNotFound()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:18:11 IST" name="singleResourceNotFound" finished-at="2025-10-05T19:19:14 IST" duration-ms="63671" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -733,7 +777,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.jav
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -743,7 +787,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at com.testframework.api_tests.LoginApiTests.singleResourceNotFound(LoginApiTests.java:52)
@@ -769,18 +813,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleResourceNotFound -->
-        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:05 IST" name="captureLogs" finished-at="2025-10-03T20:30:05 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=singleResourceNotFound status=FAILURE method=LoginApiTests.singleResourceNotFound()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:18:11 IST" name="setup" finished-at="2025-10-05T19:18:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureLogs -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:05 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-03T20:30:05 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:19:14 IST" name="springTestContextAfterTestMethod" finished-at="2025-10-05T19:19:14 IST" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -791,7 +828,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.testframework.api_tests.LoginApiTests@3c910c35]" started-at="2025-10-03T20:30:05 IST" name="springTestContextAfterTestClass" finished-at="2025-10-03T20:30:05 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="captureLogs(org.testng.ITestResult)[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:19:14 IST" name="captureLogs" finished-at="2025-10-05T19:19:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=singleResourceNotFound status=FAILURE method=LoginApiTests.singleResourceNotFound()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureLogs -->
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.testframework.api_tests.LoginApiTests@948006a]" started-at="2025-10-05T19:19:14 IST" name="springTestContextAfterTestClass" finished-at="2025-10-05T19:19:14 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->

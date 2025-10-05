@@ -1,0 +1,271 @@
+HTTP/1.1 200 OK
+Date: Sun, 05 Oct 2025 13:46:06 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+etag: W/"4dd-DrF1o347O4xIDtQcSDVFPwdhWRI"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 97
+Ratelimit-Reset: 300
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=usripz%2FP3JSVRsb%2FIBkZ1yJH3jQaPoMp%2FeQBSxrT7Qk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759642736"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=usripz%2FP3JSVRsb%2FIBkZ1yJH3jQaPoMp%2FeQBSxrT7Qk%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759642736"
+Server: cloudflare
+Vary: Origin, accept-encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+X-Reqres-Docs: https://reqres.in
+X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates: https://app.reqres.in/templates
+X-Reqres-Upgrade: https://app.reqres.in/upgrade
+X-Request-Id: 20a36109-8253-ea71-e172-27783b1bfca4
+X-Xss-Protection: 1; mode=block
+Age: 1973
+Cache-Control: max-age=14400
+cf-cache-status: HIT
+Content-Encoding: gzip
+CF-RAY: 989d5d004e3e7f87-MAA
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "cerulean",
+            "year": 2000,
+            "color": "#98B2D1",
+            "pantone_value": "15-4020"
+        },
+        {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+        },
+        {
+            "id": 3,
+            "name": "true red",
+            "year": 2002,
+            "color": "#BF1932",
+            "pantone_value": "19-1664"
+        },
+        {
+            "id": 4,
+            "name": "aqua sky",
+            "year": 2003,
+            "color": "#7BC4C4",
+            "pantone_value": "14-4811"
+        },
+        {
+            "id": 5,
+            "name": "tigerlily",
+            "year": 2004,
+            "color": "#E2583E",
+            "pantone_value": "17-1456"
+        },
+        {
+            "id": 6,
+            "name": "blue turquoise",
+            "year": 2005,
+            "color": "#53B0AE",
+            "pantone_value": "15-5217"
+        }
+    ],
+    "support": {
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+    },
+    "_meta": {
+        "powered_by": "🚀 ReqRes - Deploy backends in 30 seconds",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "docs_url": "https://reqres.in",
+        "template_gallery": "https://app.reqres.in/templates",
+        "message": "This API is powered by ReqRes. Deploy your own backend in 30 seconds!",
+        "features": [
+            "30 Second Backend Templates",
+            "Custom API Endpoints",
+            "Data Persistence",
+            "Real-time Analytics"
+        ],
+        "upgrade_cta": "Upgrade to Pro for unlimited requests, custom endpoints, and data persistence"
+    }
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
+HTTP/1.1 200 OK
+Date: Sun, 05 Oct 2025 13:46:06 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+etag: W/"4dd-DrF1o347O4xIDtQcSDVFPwdhWRI"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 97
+Ratelimit-Reset: 300
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=usripz%2FP3JSVRsb%2FIBkZ1yJH3jQaPoMp%2FeQBSxrT7Qk%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759642736"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=usripz%2FP3JSVRsb%2FIBkZ1yJH3jQaPoMp%2FeQBSxrT7Qk%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759642736"
+Server: cloudflare
+Vary: Origin, accept-encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Powered-By: ReqRes.in - Deploy backends in 30 seconds
+X-Reqres-Docs: https://reqres.in
+X-Reqres-Message: This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates: https://app.reqres.in/templates
+X-Reqres-Upgrade: https://app.reqres.in/upgrade
+X-Request-Id: 20a36109-8253-ea71-e172-27783b1bfca4
+X-Xss-Protection: 1; mode=block
+Age: 1973
+Cache-Control: max-age=14400
+cf-cache-status: HIT
+Content-Encoding: gzip
+CF-RAY: 989d5d00fe2bc69f-MAA
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "cerulean",
+            "year": 2000,
+            "color": "#98B2D1",
+            "pantone_value": "15-4020"
+        },
+        {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+        },
+        {
+            "id": 3,
+            "name": "true red",
+            "year": 2002,
+            "color": "#BF1932",
+            "pantone_value": "19-1664"
+        },
+        {
+            "id": 4,
+            "name": "aqua sky",
+            "year": 2003,
+            "color": "#7BC4C4",
+            "pantone_value": "14-4811"
+        },
+        {
+            "id": 5,
+            "name": "tigerlily",
+            "year": 2004,
+            "color": "#E2583E",
+            "pantone_value": "17-1456"
+        },
+        {
+            "id": 6,
+            "name": "blue turquoise",
+            "year": 2005,
+            "color": "#53B0AE",
+            "pantone_value": "15-5217"
+        }
+    ],
+    "support": {
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+    },
+    "_meta": {
+        "powered_by": "🚀 ReqRes - Deploy backends in 30 seconds",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "docs_url": "https://reqres.in",
+        "template_gallery": "https://app.reqres.in/templates",
+        "message": "This API is powered by ReqRes. Deploy your own backend in 30 seconds!",
+        "features": [
+            "30 Second Backend Templates",
+            "Custom API Endpoints",
+            "Data Persistence",
+            "Real-time Analytics"
+        ],
+        "upgrade_cta": "Upgrade to Pro for unlimited requests, custom endpoints, and data persistence"
+    }
+}
+HTTP/1.1 401 Unauthorized
+Date: Sun, 05 Oct 2025 13:46:06 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 27
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"1b-FQ1mIOMgD7jlZN53VsiSdXzsYTY"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 97
+Ratelimit-Reset: 147
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=sMk2cAVgSFSXdVFGquTMsd%2FX8NsdsrOtDJdqfWg3IB0%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1759671966"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=sMk2cAVgSFSXdVFGquTMsd%2FX8NsdsrOtDJdqfWg3IB0%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1759671966"
+Server: cloudflare
+Vary: Origin
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 99972db5-748d-8cd2-ad5c-77c7037199be
+X-Xss-Protection: 1; mode=block
+cf-cache-status: DYNAMIC
+CF-RAY: 989d5d009d7b9149-MAA
+
+{
+    "error": "Missing API key"
+}
+Request method:	POST
+Request URI:	https://reqres.in/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
