@@ -79,22 +79,6 @@ PUT user → Verify update success
 
 DELETE user → Verify 204 No Content
 
-🔹 Folder Structure
-api-ui-automation-scheduler/
- ├── src/main/java/com/testframework/
- │   ├── controller/   # REST Controllers
- │   ├── service/      # Business Logic
- │   ├── repository/   # DB Repositories
- │   ├── model/        # Entities (TestCase, Execution, Result)
- │   ├── scheduler/    # Scheduled Jobs
- │   └── tests/        # UI + API Tests
- ├── src/test/resources/
- │   ├── blaze_smoke.xml   # TestNG Suite for UI
- │   └── reqres_smoke.xml  # TestNG Suite for API
- ├── reports/              # HTML, CSV, JUnit reports
- ├── artifacts/            # Screenshots, API logs
- ├── pom.xml               # Maven dependencies
- └── README.md             # Project Documentation
 
 🔹 Setup Instructions
 1️⃣ Clone Repo
